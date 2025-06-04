@@ -3,13 +3,13 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace DotriStack.DotNet.Debiatr;
 
-public static class Debiatr
+public static class MediatorExtensions
 {
-    public static IServiceCollection AddDebiatr(this IServiceCollection services, Assembly? assembly = null)
+    public static IServiceCollection AddMediator(this IServiceCollection services, Assembly? assembly = null)
     {
         assembly ??= Assembly.GetCallingAssembly();
 
-        services.AddScoped<ISender, Sender>();
+        services.AddScoped<IMediator, Mediator>();
         
         var handlerTypes = assembly
             .GetTypes()

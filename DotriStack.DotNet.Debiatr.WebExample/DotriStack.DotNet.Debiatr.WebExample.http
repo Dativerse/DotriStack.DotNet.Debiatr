@@ -1,0 +1,6 @@
+@DotriStack.DotNet.Debiatr.WebExample_HostAddress = http://localhost:5050
+
+GET {{DotriStack.DotNet.Debiatr.WebExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

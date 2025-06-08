@@ -6,8 +6,20 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <PackageId>DotriStack.DotNet.Debiatr</PackageId>
+        <Version>1.0.2</Version>
+        <Authors>Dattiverse</Authors>
+        <Description>Do tri mediator implementation</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/Dativerse/DotriStack.DotNet.Debiatr</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.5" />
+        <None Include="README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 	
 </Project>
